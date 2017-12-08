@@ -1,0 +1,188 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#icon {
+  background: transparent;
+  max-width: 100%;
+  height: 120px;
+  -webkit-transform: scale(0.575);
+  transform: scale(0.575);
+  -webkit-transition: 300ms all ease-in-out;
+  transition: 300ms all ease-in-out;
+}
+
+#icon:hover {
+  cursor: pointer;
+  fill: #AB8469;
+}
+
+.useraccount {
+  height: 120px;
+  position: relative;
+  width: 120px;
+}
+
+.useraccount svg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transition: 900ms all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 900ms all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  z-index: -1;
+  fill: transparent;
+}
+
+.useraccount svg:nth-child(1) {
+  background: url(../images/pg-tide.jpg) top center no-repeat;
+  background-size: 0;
+  opacity: 0;
+}
+
+.useraccount svg:nth-child(2) {
+  background: url(../images/pg-febreze.jpg) top center no-repeat;
+  background-size: 0;
+  opacity: 0;
+}
+
+.useraccount svg:nth-child(3) {
+  background: url(../images/pg-dawn.jpg) top center no-repeat;
+  background-size: 0;
+  opacity: 0;
+}
+
+.useraccount svg:nth-child(4) {
+  background: url(../images/pg-cascade.jpg) top center no-repeat;
+  background-size: 0;
+  opacity: 0;
+}
+
+.useraccount svg:nth-child(5) {
+  background: url(../images/pg-ariel.jpg) top center no-repeat;
+  background-size: 0;
+  opacity: 0;
+}
+
+.useraccount svg:nth-child(6) {
+  background: url(../images/pg-ambipur.jpg) top center no-repeat;
+  background-size: 0;
+  opacity: 0;
+}
+
+.useraccount svg:nth-child(7):not(#icon) {
+  background: url(../images/pg-bounce.jpg) top center no-repeat;
+  background-size: 0;
+  opacity: 0;
+}
+
+.useraccount svg:nth-child(8):not(#icon) {
+  background: url(../images/pg-downy.jpg) top center no-repeat;
+  background-size: 0;
+  opacity: 0;
+}
+
+.useraccount svg:nth-child(9):not(#icon) {
+  background: url(../images/pg-cheer.jpg) top center no-repeat;
+  background-size: 0;
+  opacity: 0;
+}
+
+.useraccount.is-bloomed svg:not(#icon) {
+  top: -50%;
+  background-size: 72px;
+}
+
+.useraccount.is-bloomed svg:nth-of-type(1):not(#icon) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-delay: 36ms;
+  transition-delay: 36ms;
+  opacity: 1;
+}
+
+.useraccount.is-bloomed svg:nth-of-type(2):not(#icon) {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition-delay: 72ms;
+  transition-delay: 72ms;
+  opacity: 1;
+}
+
+.useraccount.is-bloomed svg:nth-of-type(3):not(#icon) {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transition-delay: 108ms;
+  transition-delay: 108ms;
+  opacity: 1;
+}
+
+.useraccount.is-bloomed svg:nth-of-type(4):not(#icon) {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition-delay: 144ms;
+  transition-delay: 144ms;
+  opacity: 1;
+}
+
+.useraccount.is-bloomed svg:nth-of-type(5):not(#icon) {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  -webkit-transition-delay: 180ms;
+  transition-delay: 180ms;
+  opacity: 1;
+}
+
+.useraccount.is-bloomed svg:nth-of-type(6):not(#icon) {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transition-delay: 216ms;
+  transition-delay: 216ms;
+  opacity: 1;
+}
+
+.useraccount.is-bloomed svg:nth-of-type(7):not(#icon) {
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+  -webkit-transition-delay: 252ms;
+  transition-delay: 252ms;
+  opacity: 1;
+}
+
+.useraccount.is-bloomed svg:nth-of-type(8):not(#icon) {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition-delay: 288ms;
+  transition-delay: 288ms;
+  opacity: 1;
+}
+
+.useraccount.is-bloomed svg:nth-of-type(9):not(#icon) {
+  -webkit-transform: rotate(405deg);
+  transform: rotate(405deg);
+  -webkit-transition-delay: 324ms;
+  transition-delay: 324ms;
+  opacity: 1;
+}
+
+.click-icon {
+  margin-top: 55px;
+}
